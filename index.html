@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>the beatles</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.flex-images.css">
+<style>
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.item img{
+	transition: all 0.5s;
+}
+.item img:hover{
+	transform:scale(1.2);
+}
+	#box{
+		margin: 0 auto;
+		text-align:center;
+		padding-top: 30px;
+		font-size: 50px;
+		color:#000;
+		background-color:#FC0;
+		height: 100px;
+		width: 1200px;
+		font-family:"Goudy Stout";
+	}
+</style>
+</head>
+
+<body>
+<div id="box">The beatles</div>
+<div id="container"  class="flex-images">
+ 
+<div class="item" data-w="1200" data-h="1236"><img src="images/1.jpeg" width="1200" height="1236" /></div>
+<div class="item" data-w="960" data-h="600"><img src="images/2.jpeg" width="960" height="600" /></div>
+<div class="item" data-w="1200" data-h="1132"><img src="images/3.jpeg" width="1200" height="1132" /></div>
+<div class="item" data-w="541" data-h="349"><img src="images/4.jpeg" width="541" height="349" /></div>
+<div class="item" data-w="500" data-h="750"><img src="images/5.jpg" width="500" height="750" /></div>
+<div class="item" data-w="640" data-h="360"><img src="images/6.jpeg" width="640" height="360" /></div>
+<div class="item" data-w="1220" data-h="686"><img src="images/7.jpeg" width="1220" height="686" /></div>
+<div class="item" data-w="480" data-h="300"><img src="images/9.jpeg" width="480" height="300" /></div>
+<div class="item" data-w="800" data-h="800"><img src="images/10.jpeg" width="800" height="800" /></div>
+<div class="item" data-w="673" data-h="642"><img src="images/11.jpeg" width="673" height="642" /></div>
+<div class="item" data-w="329" data-h="283"><img src="images/12.jpeg" width="329" height="283" /></div>
+<div class="item" data-w="290" data-h="312"><img src="images/20.jpg" width="290" height="312" /></div>
+<div class="item" data-w="1280" data-h="1024"><img src="images/13.jpeg" width="1280" height="1024" /></div>
+<div class="item" data-w="480" data-h="321"><img src="images/14.jpeg" width="480" height="321" /></div>
+<div class="item" data-w="1536" data-h="1024"><img src="images/15.jpeg" width="1536" height="1024" /></div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery.flex-images.js"></script>
+<script>
+ $('#container').flexImages({rowHeight: 300});
+</script>
+</body>
+</html>
